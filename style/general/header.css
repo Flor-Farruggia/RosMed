@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+body {
+    margin: 0%;
+    padding: 0%;
+}
+.header {
+    background-color: #e2ad19fa;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.header h1 {
+    text-align: start;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 40px;
+    margin-left: 2%;
+}
+.header p {
+    position: absolute;
+    text-align: end;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 22px;
+    right: 2%;
+}
+.header img {
+    left: 20%;
+    position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+    .header img {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .header img {
+        display: none;
+    }
+}
