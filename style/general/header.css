@@ -19,26 +19,39 @@ body {
     font-size: 40px;
     margin-left: 2%;
 }
-.header p {
-    position: absolute;
-    text-align: end;
-    font-family: 'PT Serif', serif;
-    font-weight: 400;
-    font-size: 22px;
-    right: 2%;
-}
 .header img {
     left: 20%;
     position: relative;
+}
+.registro-ingreso {
+    display: none;
 }
 
 @media only screen and (min-width: 600px) {
     .header img {
         display: none;
     }
+    .registro-ingreso {
+            display: block;
+            position: absolute;
+            text-align: end;
+            font-family: 'PT Serif', serif;
+            font-weight: 400;
+            font-size: 22px;
+            right: 2%;
+        }
 }
 @media only screen and (min-width: 1024px) {
     .header img {
         display: none;
+    }
+    .registro-ingreso {
+        display: block;
+        position: absolute;
+        text-align: end;
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        font-size: 22px;
+        right: 2%;
     }
 }
