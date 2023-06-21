@@ -22,9 +22,23 @@ body {
 .header img {
     left: 20%;
     position: relative;
+    height: 50px;
+    width: 50px;
 }
 .registro-ingreso {
     display: none;
+}
+.registro-ingreso a:link {
+    color: #000000;
+}
+.registro-ingreso a:hover {
+    color: #ba2e00;
+}
+.registro-ingreso a:focus {
+    color: #73ba00;
+}
+.registro-ingreso a:visited {
+    color: #454545;
 }
 
 @media only screen and (min-width: 600px) {

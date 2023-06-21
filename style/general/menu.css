@@ -1,6 +1,19 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
 
+a:link {
+    color: #e2ad19fa;
+}
+a:hover {
+    color: #ba2e00;
+}
+a:focus {
+    color: #73ba00;
+}
+a:visited {
+    color: #ffffff;
+}
+
 body {
     margin: 0%;
     padding: 0%;
