@@ -7,6 +7,31 @@ body {
     border: black 1px solid;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    bottom: 0%;
+    font-size: 20px;
+}
+.footer a:link {
+    color: #000000;
+}
+.footer a:hover {
+    color: #ba2e00;
+}
+.footer a:focus {
+    color: #73ba00;
+}
+.footer a:visited {
+    color: #454545;
+}
+.left-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1%;
+}
+.right-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1%;
 }

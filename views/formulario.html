@@ -16,7 +16,7 @@
                 Ros Med
             </h1>
             <img src="" alt="icono-menu">
-            <p>
+            <p class="registro-ingreso">
                 <a href="./registro.html" target="_blank">Registro</a>
                 /
                 <a href="./ingreso.html" target="_blank">Ingreso</a>
@@ -26,9 +26,6 @@
             <ul class="menu-ul">
                 <li class="menu-list menu-inicio">
                     <a href="./index.html" target="_blank">Inicio</a>
-                </li>
-                <li class="menu-list menu-form">
-                    <a href="./formulario.html" target="_blank">Formulario</a>
                 </li>
                 <li class="menu-list menu-cuota">
                     <a href="./cuotas.html" target="_blank">Cuotas</a>
@@ -52,11 +49,13 @@
             <form class="form">
                 <div class="left-form">
                     <label for="fName">Nombre:</label>
-                    <input type="text" id="fName" name="fName" value="Escriba su nombre">
+                    <input type="text" id="fName" name="fName" autofocus required minlength="3"
+                    maxlength="30" placeholder="Escriba su nombre">
                     <label for="fLName">Apellido:</label>
-                    <input type="text" id="fLName" name="fLName" value="Escriba su apellido">
+                    <input type="text" id="fLName" name="fLName" required minlength="3"
+                    maxlength="30" placeholder="Escriba su apellido">
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" value="Escriba su mail">
+                    <input type="email" id="email" name="email" required minlength="3" placeholder="Escriba su mail">
                     <label for="motive">Seleccione su area de interes:</label>
                     <select id="motive" name="motive">
                         <option value="personal">Interes personal (paciente)</option>
@@ -70,7 +69,8 @@
                     </select>                    
                 </div>
                 <div class="right-form">
-                    <textarea id="message-area" name="message-area" rows="10" cols="40">
+                    <textarea id="message-area" name="message-area" rows="10" cols="40" required minlength="20"
+                    maxlength="120">
                         Por favor, escribe tus dudas aquí...
                     </textarea>
                     <button type="button">Enviar</button>
