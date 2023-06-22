@@ -5,11 +5,141 @@ body {
     margin: 0%;
     padding: 0%;
 }
+.menu-inicio {
+    display: none;
+}
 main {
     padding: 2%;
     background-color: #b9b7b7;
     font-family: 'Roboto', sans-serif;
 }
-.menu-inicio {
-    display: none;
+.filosofia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.info {
+    align-content: left;
+    width: 40%;
+}
+.info > h2 {
+    text-align: left;
+    font-size: 30px;
+}
+.info > p {
+    text-align: justify;
+    font-size: 20px;
+}
+.video-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.video-info > label {
+    font-size: 20px;
+}
+.info-paciente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.paciente {
+    width: 50%;
+}
+.paciente > h2 {
+    text-align: left;
+    font-size: 30px;
+}
+.paciente > p {
+    text-align: justify;
+    font-size: 20px;
+}
+.img-paciente {
+    width: 30%;
+    align-self: center;
+}
+.info-medicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.medicos {
+    width: 50%;
+}
+.medicos > h2 {
+    text-align: left;
+    font-size: 30px;
+}
+.medicos > p {
+    text-align: justify;
+    font-size: 20px;
+}
+.img-medicos {
+    width: 30%;
+    align-self: center;
+}
+.info-emergencia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.emergencia {
+    width: 50%;
+}
+.emergencia > h2 {
+    text-align: left;
+    font-size: 30px;
+}
+.emergencia > p {
+    text-align: justify;
+    font-size: 20px;
+}
+.img-emergencia {
+    width: 30%;
+    align-self: center;
+}
+.info-farmaceuticas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.farmaceuticas {
+    width: 50%;
+}
+.farmaceuticas > h2 {
+    text-align: left;
+    font-size: 30px;
+}
+.farmaceuticas > p {
+    text-align: justify;
+    font-size: 20px;
+}
+.img-farmaceuticas {
+    width: 30%;
+    align-self: center;
+}
+.info-farmacias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.farmacias {
+    width: 50%;
+}
+.farmacias > h2 {
+    text-align: left;
+    font-size: 30px;
+}
+.farmacias > p {
+    text-align: justify;
+    font-size: 20px;
+}
+.img-farmacias {
+    width: 30%;
+    align-self: center;
 }
