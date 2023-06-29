@@ -4,52 +4,71 @@ body {
     margin: 0%;
     padding: 0%;
 }
-main {
-    background-color: #b9b7b7;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+
+@media only screen and (min-width: 360px) {
+
+    main {
+        background-color: #b9b7b7;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .menu-nav {
+        visibility: hidden;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        align-items: center;
+    }
+    .left-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+    .right-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }    
 }
-.menu-form {
-    display: none;
+
+@media only screen and (min-width: 600px) {
+
+    .menu-nav {
+        visibility: visible;
+    }
+    .menu-form {
+        display: none;
+    }
 }
-.form {
-    display: flex;
-    flex-direction: row;
-}
-.form{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 2%;
-    margin-bottom: 10%;
-}
-.right-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.left-form {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    align-items: flex-start;
-}
-.left-form > input {
-    width: 240px;
-}
-.left-form > select {
-    width: 250px;
-}
-.right-form > textarea {
-    margin: 2%;
-    border-radius: 2px;
-    border: black solid 1px;
-}
-.right-form > button {
-    margin: 2%;
-    border-radius: 5px;
-    width: 30%;
-    border: black 1px solid;
+@media only screen and (min-width: 900px)  {
+
+    .form {
+        flex-direction: row;
+    }
+    .left-form > input {
+        width: 240px;
+    }
+    .left-form > select {
+        width: 250px;
+    }
+    .right-form > textarea {
+        margin: 2%;
+        border-radius: 2px;
+        border: black solid 1px;
+    }
+    .right-form > button {
+        margin: 2%;
+        border-radius: 5px;
+        width: 30%;
+        border: black 1px solid;
+    }
+
 }

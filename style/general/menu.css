@@ -7,9 +7,6 @@ a:link {
 a:hover {
     color: #ba2e00;
 }
-a:focus {
-    color: #73ba00;
-}
 a:visited {
     color: #ffffff;
 }
@@ -18,15 +15,18 @@ body {
     margin: 0%;
     padding: 0%;
 }
-.menu-nav {
-    display: none;
-    border-bottom: black 1px solid;
-    font-family: 'Roboto', sans-serif;
+@media only screen and (min-width: 360px) {
+    .menu-nav {
+        display: none;
+        border-bottom: black 1px solid;
+        font-family: 'Roboto', sans-serif;
+    }
+    ul {
+        list-style: circle;
+        align-content: space-between;
+    }    
 }
-ul {
-    list-style: circle;
-    align-content: space-between;
-}
+
 @media only screen and (min-width: 600px) {
     .menu-nav {
         display: flex;
@@ -50,7 +50,7 @@ ul {
         display: none;
     }
 }
-@media only screen and (min-width: 1024px)  {
+@media only screen and (min-width: 900px)  {
     .menu-nav {
         display: flex;
     }
