@@ -7,15 +7,13 @@ body {
 }
 main {
     padding: 2%;
-    background-color: #b9b7b7;
+    background-color: #CDD0FF;
+    color: #2E355B;
     font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (min-width: 360px) {
 
-    .menu-inicio {
-        display: none;
-    }
+@media only screen and (min-width: 360px) {
     .filosofia {
         display: flex;
         flex-direction: column;
@@ -150,6 +148,10 @@ main {
     }
 }
 @media only screen and (min-width: 600px) {
+    .menu-inicio a {
+        background-color: #CDD0FF;
+        color: #2E355B;
+    }
     .info > h2 {
         font-size: 26px;
     }

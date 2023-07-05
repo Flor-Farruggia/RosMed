@@ -1,39 +1,39 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
 
-a:link {
-    color: #e2ad19fa;
-}
-a:hover {
-    color: #ba2e00;
-}
-a:visited {
-    color: #ffffff;
-}
-
 body {
     margin: 0%;
     padding: 0%;
 }
+
 @media only screen and (min-width: 360px) {
     .menu-nav {
         display: none;
-        border-bottom: black 1px solid;
+        border-bottom: #2E355B 1px solid;
         font-family: 'Roboto', sans-serif;
     }
     ul {
         list-style: circle;
         align-content: space-between;
-    }    
+    }
 }
 
 @media only screen and (min-width: 600px) {
+    .menu-nav a {
+        text-decoration: none;
+        color: #CDD0FF;
+        border-radius: 4px;
+        padding: 16px;
+    }
+    .menu-nav a:hover {
+        background-color: #CDD0FF;
+        color: #2E355B;
+    }
     .menu-nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: #555353;
-        color:  #e2ad19fa;
+        background-color: #2E355B;
     }
     .menu-nav > ul {
         list-style: none;
