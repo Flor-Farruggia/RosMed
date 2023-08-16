@@ -53,7 +53,7 @@ saludButton.addEventListener('click', (e)=>{
 });
 emergenciaButton.addEventListener('click', (e)=>{
     e.preventDefault();
-    tableEmerg.style.display = 'table';
+    tableEmerg.style.display = 'inline-table';
     emergText.style.display = 'block';
     tableSalud.style.display = 'none';
     tablePerson.style.display = 'none';
