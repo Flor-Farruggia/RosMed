@@ -8,45 +8,397 @@
         <link href="../style/general/header.css" rel="stylesheet" type="text/css">
         <link href="../style/general/menu.css" rel="stylesheet" type="text/css">
         <link href="../style/general/footer.css" rel="stylesheet" type="text/css">
+        <link href="../style/cuota.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header class="header">
             <h1>
                 Ros Med
             </h1>
-            <img 
-            src=""
+            <img
+            src="https://cdn.icon-icons.com/icons2/1875/PNG/512/hamburgermenu_120234.png"
             alt="icono-menu">
             <p class="registro-ingreso">
-                <a href="./registro.html" target="_blank">Registro</a>
+                <a href="./registro.html" >Registro</a>
                 /
-                <a href="./ingreso.html" target="_blank">Ingreso</a>
+                <a href="./ingreso.html" >Ingreso</a>
             </p>
         </header>
         <nav class="menu-nav">
             <ul class="menu-ul">
                 <li class="menu-list menu-inicio">
-                    <a href="./index.html" target="_blank">Inicio</a>
+                    <a href="./index.html" >Inicio</a>
                 </li>
                 <li class="menu-list menu-form">
-                    <a href="./formulario.html" target="_blank">Formulario</a>
+                    <a href="./formulario.html" >Formulario</a>
                 </li>
                 <li class="menu-list menu-cuota">
-                    <a href="./cuotas.html" target="_blank">Cuotas</a>
+                    <a href="./cuotas.html" >Cuotas</a>
                 </li>
                 <li class="menu-list menu-locacion">
-                    <a href="./localizacion.html" target="_blank">Localización</a>
+                    <a href="./localizacion.html" >Localización</a>
                 </li>
                 <li class="menu-list menu-registro">
-                    <a href="./registro.html" target="_blank">Registro</a>
+                    <a href="./registro.html" >Registro</a>
                 </li>
                 <li class="menu-list menu-ingreso">
-                    <a href="./ingreso.html" target="_blank">Ingreso</a>
+                    <a href="./ingreso.html" >Ingreso</a>
                 </li>
             </ul>
         </nav>
         <main>
-            
+            <div class="userType">
+                <a href="#" class="personalButton">Personal</a>
+                <a href="#" class="medicoButton">Médico</a>
+                <a href="#" class="cenSaludButton">Centros de salud</a>
+                <a href="#" class="emergenciaButton">Emergencia</a>
+                <a href="#" class="farmaceuticaButton">Farmaceúticas</a>
+                <a href="#" class="farmaciaButton">Farmacias</a>
+            </div>
+            <div class="tables">
+                <table class="personalTable">
+                    <caption>Uso personal</caption>
+                    <thead>
+                        <tr>
+                            <th>N° de plan</th>
+                            <th>Tipo de plan</th>
+                            <th>Cantidad de usuarios</th>
+                            <th>Tiempos de pago</th>
+                            <th>Precios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P-001</td>
+                            <td>Gratis</td>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>P-002</td>
+                            <td>Pago</td>
+                            <td>1</td>
+                            <td>Mensual</td>
+                            <td>1000$</td>
+                        </tr>
+                        <tr>
+                            <td>P-003</td>
+                            <td>Premium familiar 1</td>
+                            <td>1/5</td>
+                            <td>Mensual</td>
+                            <td>4000$</td>
+                        </tr>
+                        <tr>
+                            <td>P-004</td>
+                            <td>Premium familiar 2</td>
+                            <td>1/5</td>
+                            <td>Trimestral</td>
+                            <td>11.000$</td>
+                        </tr>
+                        <tr>
+                            <td>P-005</td>
+                            <td>Premium Gran familia 1</td>
+                            <td>1/8</td>
+                            <td>Mensual</td>
+                            <td>8000$</td>
+                        </tr>
+                        <tr>
+                            <td>P-006</td>
+                            <td>Premium Gran familia 2</td>
+                            <td>1/8</td>
+                            <td>Trimestral</td>
+                            <td>22.000$</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="medTable">
+                    <caption>Uso médico</caption>
+                    <thead>
+                        <tr>
+                            <th>N° de plan</th>
+                            <th>Cantidad de pacientes</th>
+                            <th>Tiempos de pago</th>
+                            <th>Precios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P-007</td>
+                            <td>400</td>
+                            <td>Mensual</td>
+                            <td>20.000</td>
+                        </tr>
+                        <tr>
+                            <td>P-008</td>
+                            <td>400</td>
+                            <td>Trimestral</td>
+                            <td>56.000</td>
+                        </tr>
+                        <tr>
+                            <td>P-009</td>
+                            <td>900</td>
+                            <td>Mensual</td>
+                            <td>80.000</td>
+                        </tr>
+                        <tr>
+                            <td>P-010</td>
+                            <td>900</td>
+                            <td>Trimestral</td>
+                            <td>230.000</td>
+                        </tr>
+                        <tr>
+                            <td>P-011</td>
+                            <td>1400</td>
+                            <td>Mensual</td>
+                            <td>140.000</td>
+                        </tr>
+                        <tr>
+                            <td>P-012</td>
+                            <td>1400</td>
+                            <td>Trimestral</td>
+                            <td>400.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="centSalTable">
+                    <caption>Uso en centros de salud</caption>
+                    <thead>
+                        <tr>
+                            <th>N° de plan</th>
+                            <th>Tipo de centro</th>
+                            <th>Areas médicas</th>
+                            <th>Cantidad de pacientes por area</th>
+                            <th>Tiempos de pago</th>
+                            <th>Precios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P-013</td>
+                            <td>Sanatorio</td>
+                            <td>10</td>
+                            <td>1000</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-014</td>
+                            <td>Sanatorio</td>
+                            <td>30</td>
+                            <td>1000</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-015</td>
+                            <td>Sanatorio</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-016</td>
+                            <td>Sanatorio</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-017</td>
+                            <td>Hospital</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-018</td>
+                            <td>Hospital</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-019</td>
+                            <td>Hospital</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-020</td>
+                            <td>Hospital</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-021</td>
+                            <td>Clínica/Consultorio</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-022</td>
+                            <td>Clínica/Consultorio</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-023</td>
+                            <td>Clínica/Consultorio</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-024</td>
+                            <td>Clínica/Consultorio</td>
+                            <td>xx</td>
+                            <td>xxxx</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="emergenciaTable">
+                    <caption>Uso en servicio de emergencia</caption>
+                    <thead>
+                        <tr>
+                            <th>N° de plan</th>
+                            <th>Usos</th>
+                            <th>Tipo</th>
+                            <th>Tiempos de pago</th>
+                            <th>Precios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P-025</td>
+                            <td>Servicio a domicilio</td>
+                            <td>Privado</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-026</td>
+                            <td>Servicio a domicilio</td>
+                            <td>Privado</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-027</td>
+                            <td>Servicio de emergencia</td>
+                            <td>Privado</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-027</td>
+                            <td>Servicio de emergencia</td>
+                            <td>Privado</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-028</td>
+                            <td>Servicio de emergencia</td>
+                            <td>Público</td>
+                            <td>Trimestral</td>
+                            <td>xx$</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="emergenciaText">
+                    Cualquier arreglo externo puede ser determinado en contrato, sea que el uso de la app la pague el servicio de emergencia o la obra social.
+                </p>
+                <table class="farmaceuticaTable">
+                    <caption>Uso para farmaceúticas</caption>
+                    <thead>
+                        <tr>
+                            <th>N° de plan</th>
+                            <th>Usos</th>
+                            <th>Tiempos de pago</th>
+                            <th>Precios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P-029</td>
+                            <td>Publicidad</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-030</td>
+                            <td>Publicidad y beneficios</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-031</td>
+                            <td>Publicidad</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-032</td>
+                            <td>Publicidad y beneficios</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-033</td>
+                            <td>Publicidad</td>
+                            <td>Anual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-034</td>
+                            <td>Publicidad y beneficios</td>
+                            <td>Anual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="farmText">
+                    Cualquier arreglo externo puede ser determinado en contrato.
+                </p>
+                <table class="farmaciaTable">
+                    <caption>Uso para farmacias</caption>
+                    <thead>
+                        <tr>
+                            <th>N° de plan</th>
+                            <th>Tiempos de pago</th>
+                            <th>Precios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P-035</td>
+                            <td>Mensual</td>
+                            <td>xxxx$</td>
+                        </tr>
+                        <tr>
+                            <td>P-036</td>
+                            <td>Trimestral</td>
+                            <td>xxxx$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
         <footer class="footer">
             <div class="left-footer">
@@ -60,8 +412,13 @@
                 <img src="" alt="icono-twitter" href="">
                 <img src="" alt="icono-instagram" href="">
                 <img src="" alt="icono-linkedin" href="">
-                <!--Boton/icono flechita para ir arriba--->                
+                <!--Boton/icono flechita para ir arriba--->
             </div>
         </footer>
+
+
+
+
+        <script src="../js/cuota.js"></script>
     </body>
 </html>

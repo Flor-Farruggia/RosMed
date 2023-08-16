@@ -7,6 +7,21 @@ body {
 }
 
 @media only screen and (min-width: 360px) {
+    .menu-nav-min-show {
+        background-color: aliceblue;
+        color: #2E355B;
+        border: #2E355B 3px solid;
+        margin: 10px;
+    }
+    .menu-ul-min {
+        list-style: none;
+        display: none;
+    }
+    .menu-nav-min-show .menu-ul-min-show {
+        display:unset;
+    }
+
+
     .menu-nav {
         display: none;
         border-bottom: #2E355B 1px solid;

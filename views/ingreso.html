@@ -8,42 +8,62 @@
         <link href="../style/general/header.css" rel="stylesheet" type="text/css">
         <link href="../style/general/menu.css" rel="stylesheet" type="text/css">
         <link href="../style/general/footer.css" rel="stylesheet" type="text/css">
+        <link href="../style/ingreso.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header class="header">
             <h1>
                 Ros Med
             </h1>
-            <img 
-            src=""
+            <img
+            src="https://cdn.icon-icons.com/icons2/1875/PNG/512/hamburgermenu_120234.png"
             alt="icono-menu">
             <p class="registro-ingreso">
-                <a href="./registro.html" target="_blank">Registro</a>
+                <a href="./registro.html" >Registro</a>
                 /
-                <a href="./ingreso.html" target="_blank">Ingreso</a>
+                <a href="./ingreso.html" >Ingreso</a>
             </p>
         </header>
         <nav class="menu-nav">
             <ul class="menu-ul">
                 <li class="menu-list menu-inicio">
-                    <a href="./index.html" target="_blank">Inicio</a>
+                    <a href="./index.html" >Inicio</a>
                 </li>
                 <li class="menu-list menu-form">
-                    <a href="./formulario.html" target="_blank">Formulario</a>
+                    <a href="./formulario.html" >Formulario</a>
                 </li>
                 <li class="menu-list menu-cuota">
-                    <a href="./cuotas.html" target="_blank">Cuotas</a>
+                    <a href="./cuotas.html" >Cuotas</a>
                 </li>
                 <li class="menu-list menu-locacion">
-                    <a href="./localizacion.html" target="_blank">Localización</a>
+                    <a href="./localizacion.html" >Localización</a>
                 </li>
                 <li class="menu-list menu-registro">
-                    <a href="./registro.html" target="_blank">Registro</a>
+                    <a href="./registro.html" >Registro</a>
                 </li>
             </ul>
         </nav>
         <main>
-            
+            <h2 class="tittle-question">Bienvenido!</h2>
+            <p class="comment">
+                Por favor, rellena el siguiente formulario con tus datos para ingresar como usuario.
+            </p>
+            <form class="form">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required minlength="3" placeholder="Escriba su mail">
+                <label for="pswd">Contraseña:</label>
+                <input type="password" id="pswd" name="pswd" required minlength="8"maxlength="20" placeholder="Escriba su contraseña">
+                <p>Se ha olvidado su contraseña?</p>
+                <a href="" class="forgotPswd">Presione aquí y recuperémosla</a>
+                <a href="#" class="buttonLog">ingresar</a>
+            </form>
+            <section class="modal ">
+                <div class="modalContainer">
+                    <h2>Éxito!</h2>
+                    <p>Bienvenido, su ingreso fue exitoso.</p>
+                    <a href="#" class="modalClose">Cerrar</a>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="left-footer">
@@ -57,8 +77,12 @@
                 <img src="" alt="icono-twitter" href="">
                 <img src="" alt="icono-instagram" href="">
                 <img src="" alt="icono-linkedin" href="">
-                <!--Boton/icono flechita para ir arriba--->                
+                <!--Boton/icono flechita para ir arriba--->
             </div>
         </footer>
+
+
+
+        <script src="../js/ingreso.js"></script>
     </body>
 </html>

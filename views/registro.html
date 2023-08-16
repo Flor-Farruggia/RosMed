@@ -8,42 +8,82 @@
         <link href="../style/general/header.css" rel="stylesheet" type="text/css">
         <link href="../style/general/menu.css" rel="stylesheet" type="text/css">
         <link href="../style/general/footer.css" rel="stylesheet" type="text/css">
+        <link href="../style/registro.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header class="header">
             <h1>
                 Ros Med
             </h1>
-            <img 
-            src=""
+            <img
+            src="https://cdn.icon-icons.com/icons2/1875/PNG/512/hamburgermenu_120234.png"
             alt="icono-menu">
             <p class="registro-ingreso">
-                <a href="./registro.html" target="_blank">Registro</a>
+                <a href="./registro.html" >Registro</a>
                 /
-                <a href="./ingreso.html" target="_blank">Ingreso</a>
+                <a href="./ingreso.html" >Ingreso</a>
             </p>
         </header>
         <nav class="menu-nav">
             <ul class="menu-ul">
                 <li class="menu-list menu-inicio">
-                    <a href="./index.html" target="_blank">Inicio</a>
+                    <a href="./index.html" >Inicio</a>
                 </li>
                 <li class="menu-list menu-form">
-                    <a href="./formulario.html" target="_blank">Formulario</a>
+                    <a href="./formulario.html" >Formulario</a>
                 </li>
                 <li class="menu-list menu-cuota">
-                    <a href="./cuotas.html" target="_blank">Cuotas</a>
+                    <a href="./cuotas.html" >Cuotas</a>
                 </li>
                 <li class="menu-list menu-locacion">
-                    <a href="./localizacion.html" target="_blank">Localización</a>
+                    <a href="./localizacion.html" >Localización</a>
                 </li>
                 <li class="menu-list menu-ingreso">
-                    <a href="./ingreso.html" target="_blank">Ingreso</a>
+                    <a href="./ingreso.html" >Ingreso</a>
                 </li>
             </ul>
         </nav>
         <main>
-            
+            <h2>Registro:</h2>
+            <p>Quieres registrarte, maravilloso, gracias por confiar en nosotros! ahora vamos a completar el formulario.</p>
+            <form class="form">
+                <div class="leftForm">
+                    <label for="fName">Nombre:</label>
+                    <input type="text" id="fName" name="fName" autofocus required minlength="3"
+                    maxlength="30" placeholder="Escriba su nombre">
+                    <label for="fLName">Apellido:</label>
+                    <input type="text" id="fLName" name="fLName" required minlength="3"
+                    maxlength="30" placeholder="Escriba su apellido">
+                    <label for="dni">Documento:</label>
+                    <input type="number" id="dni" name="dni" autofocus required minlength="7"
+                    maxlength="8" placeholder="Escriba su documento">
+                    <label for="birthDate">Fecha de nacimiento:</label>
+                    <input type="date" id="birthDate" name="birthDate" required placeholder="Escriba su fecha de nacimiento">
+                </div>
+                <div class="rightForm">
+                <label for="plan">Plan:</label>
+                <select id="plan" name="plan">
+                    <option value="placeholder">Seleccione el tipo de plan:</option>
+                    <option value="free">Plan gratuíto</option>
+                    <option value="paid">Plan pago</option>
+                    <option value="paidFamily">Plan premium para familia (2/5)</option>
+                    <option value="premiumBigFamily">Plan premium para familia (2/8)</option>
+                </select>
+                <label for="payment">Forma de pago:</label>
+                <select id="payment" name="payment">
+                    <option value="placeholder">Seleccione el método de pago:</option>
+                    <option value="free">Ninguno</option>
+                    <option value="credit">Tarjeta de crédito</option>
+                    <option value="debit">tarjeta de débito</option>
+                    <option value="electronic">Pago electrónico</option>
+                </select>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required minlength="3" placeholder="Escriba su mail">
+                <label for="pswd">Contraseña:</label>
+                <input type="password" id="pswd" name="pswd" required minlength="8"maxlength="20" placeholder="Escriba su contraseña">
+                </div>
+            </form>
+            <a href="#" class="buttonSignIn">Registrar</a>
         </main>
         <footer class="footer">
             <div class="left-footer">
@@ -57,7 +97,7 @@
                 <img src="" alt="icono-twitter" href="">
                 <img src="" alt="icono-instagram" href="">
                 <img src="" alt="icono-linkedin" href="">
-                <!--Boton/icono flechita para ir arriba--->                
+                <!--Boton/icono flechita para ir arriba--->
             </div>
         </footer>
     </body>

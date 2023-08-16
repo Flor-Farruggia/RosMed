@@ -1,0 +1,250 @@
+@import url('https://fonts.google.com/share?selection.family=Roboto');
+/**font-family: 'Roboto', sans-serif;*/
+body {
+    margin: 0%;
+    padding: 0%;
+}
+main {
+    background-color: #CDD0FF;
+    color: #2E355B;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 360px) {
+    .menu-nav {
+        visibility: hidden;
+    }
+    a {
+        color: #000a9b;
+        border-radius: 2%;
+        margin-bottom: 5%;
+        padding: 2%;
+    }
+    a:hover {
+        background-color:#2E355B;
+        color: #CDD0FF;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 600px) {
+    .menu-nav {
+        visibility: visible;
+    }
+    a {
+        color: #000a9b;
+        border-radius: 2%;
+        margin-bottom: 5%;
+        padding: 2%;
+    }
+    a:hover {
+        background-color:#2E355B;
+        color: #CDD0FF;
+    }
+}
+@media only screen and (min-width: 900px)  {
+    .userType {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 1200px;
+    }
+    .userType a{
+        margin: 2%;
+        border-radius: 5px;
+        width: 16%;
+        border: #2E355B 2px solid;
+        color: #CDD0FF;
+        background-color: #2E355B;
+    }
+    .userType a:hover{
+        border: #2E355B 2px solid;
+        color: #2E355B;
+        background-color: #CDD0FF;
+    }
+    .personalTable {
+        display: table;
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        width: 1000px;
+    }
+    .personalTable caption {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 6px 0px;
+    }
+    .personalTable tr th {
+        background-color: #EDC33B;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+    .personalTable tr td {
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        padding: 1%;
+    }
+    .personalTable tr td:hover {
+        background: #EDC33B;
+    }
+    .medTable {
+        display: none;
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        width: 1000px;
+    }
+    .medTable caption {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 6px 0px;
+    }
+    .medTable tr th {
+        background-color: #EDC33B;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+    .medTable tr td {
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        padding: 1%;
+    }
+    .centSalTable {
+        display: none;
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        width: 1200px;
+    }
+    .centSalTable caption {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 6px 0px;
+    }
+    .centSalTable tr th {
+        background-color: #EDC33B;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+    .centSalTable tr td {
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        padding: 1%;
+    }
+    .emergenciaTable {
+        display: none;
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        width: 1200px;
+    }
+    .emergenciaTable caption {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 6px 0px;
+    }
+    .emergenciaTable tr th {
+        background-color: #EDC33B;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+    .emergenciaTable tr td {
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        padding: 1%;
+    }
+    .emergenciaText {
+        display: none;
+        font-style: bold;
+        font-size: 20px;
+    }
+    .farmaceuticaTable {
+        display: none;
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        width: 1200px;
+    }
+    .farmaceuticaTable caption {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 6px 0px;
+    }
+    .farmaceuticaTable tr th {
+        background-color: #EDC33B;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+    .farmaceuticaTable tr td {
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        padding: 1%;
+    }
+    .farmText {
+        display: none;
+        font-style: bold;
+        font-size: 20px;
+    }
+    .farmaciaTable {
+        display: none;
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        width: 1200px;
+    }
+    .farmaciaTable caption {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 6px 0px;
+    }
+    .farmaciaTable tr th {
+        background-color: #EDC33B;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+    .farmaciaTable tr td {
+        background-color: #FFEFCA;
+        border: #2E355B 2px solid;
+        border-collapse: collapse;
+        padding: 1%;
+    }
+    .tables tbody tr:hover {
+        background-color: #EDC33B;
+    }
+    .tables tbody td:hover {
+        background-color: #c19401;
+    }
+}
