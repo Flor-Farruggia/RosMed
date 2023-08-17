@@ -10,6 +10,7 @@ main {
     background-color: #CDD0FF;
     color: #2E355B;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
 }
 
 

@@ -12,6 +12,7 @@ main {
     text-align: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
 }
 .registro-ingreso {
     visibility:hidden;
@@ -61,7 +62,7 @@ main {
     .buttonLog {
         margin: 2%;
         border-radius: 5px;
-        width: 16%;
+        width: 50%;
         border: #2E355B 2px solid;
         color: #CDD0FF;
         background-color: #2E355B;
@@ -102,6 +103,68 @@ main {
         place-items: center;
         grid-auto-columns: 100%;
     }
+    .modalPass {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #2E355Bbd;
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .modalPassShow {
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .modalClose {
+        margin: 10%;
+        border-radius: 5px;
+        width: 50%;
+        border: #2E355B 2px solid;
+        color: #CDD0FF;
+        background-color: #2E355B;
+    }
+    .modalPassCont{
+        width: 90%;
+        margin: auto;
+        max-width: 430px;
+        max-height: 90%;
+        background-color: #CDD0FF;
+        border-radius: 6px;
+        padding: 3px;
+        display: grid;
+        gap: 1px;
+        place-items: center;
+        grid-auto-columns: 100%;
+    }
+    .buttonModal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .buttonModal a {
+        margin: 10%;
+        border-radius: 5px;
+        width: 50%;
+        border: #2E355B 2px solid;
+        color: #CDD0FF;
+        background-color: #2E355B;
+    }
+    .tittle {
+        display: none;
+    }
+    #emailPass {
+        display: none;
+    }
+    .check {
+        display: none;
+    }
+
+
+
 }
 
 @media only screen and (min-width: 600px) {
