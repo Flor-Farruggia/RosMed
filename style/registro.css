@@ -68,6 +68,80 @@ main {
         margin-bottom: 5%;
         padding: 2px;
     }
+
+    .modalSuccess {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #2E355Bbd;
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .modalSuccessShow {
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .modalCont {
+        width: 90%;
+        margin: auto;
+        max-width: 600px;
+        max-height: 90%;
+        background-color: #CDD0FF;
+        border-radius: 6px;
+        padding: 3px;
+        display: grid;
+        gap: 1px;
+        place-items: center;
+        grid-auto-columns: 100%;
+    }
+    .modalSuccess a {
+        margin: 10%;
+        border-radius: 5px;
+        width: 50%;
+        border: #2E355B 2px solid;
+        color: #CDD0FF;
+        background-color: #2E355B;
+    }
+
+    .modalError {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #2E355Bbd;
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .modalErrorShow {
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .modalContError {
+        width: 90%;
+        margin: auto;
+        max-width: 323px;
+        max-height: 90%;
+        background-color: #CDD0FF;
+        border-radius: 6px;
+        padding: 3px;
+        display: grid;
+        gap: 1px;
+        place-items: center;
+        grid-auto-columns: 100%;
+    }
+    .modalError a {
+        margin: 10%;
+        border-radius: 5px;
+        width: 50%;
+        border: #2E355B 2px solid;
+        color: #CDD0FF;
+        background-color: #2E355B;
+    }
 }
 
 @media only screen and (min-width: 600px) {
