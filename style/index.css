@@ -7,7 +7,7 @@ body {
 }
 main {
     padding: 2%;
-    background-color: #CDD0FF;
+    background: linear-gradient(#CDD0FF, #fbf4e3);
     color: #2E355B;
     font-family: 'Roboto', sans-serif;
     user-select: none;
