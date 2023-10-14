@@ -1,3 +1,10 @@
+/**Para hacer la tabla responsive crear un if para redefinir las tablas, acciones y classes */
+
+
+
+
+
+
 const personalButton = document.querySelector('.personalButton');
 const medicoButton = document.querySelector('.medicoButton');
 const saludButton = document.querySelector('.cenSaludButton');

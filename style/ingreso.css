@@ -14,9 +14,6 @@ main {
     font-family: 'Roboto', sans-serif;
     user-select: none;
 }
-.registro-ingreso {
-    visibility:hidden;
-}
 
 @media only screen and (min-width: 360px) {
     .menu-nav {
@@ -219,6 +216,10 @@ main {
     }
     .form > input {
         width: 40%;
+    }
+
+    .irRegistro {
+        width: 60%;
     }
 
 }
