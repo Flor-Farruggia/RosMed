@@ -17,86 +17,106 @@ main {
     padding-bottom: 5%;
     user-select: none;
 }
+.userType {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 880px;
+}
+.userType a{
+    margin: 2%;
+    border-radius: 5px;
+    width: 16%;
+    border: #2E355B 2px solid;
+    color: #CDD0FF;
+    background-color: #2E355B;
+}
+.userType a:hover{
+    border: #2E355B 2px solid;
+    color: #2E355B;
+    background-color: #CDD0FF;
+}
+.tables {
+    width: min(900px, 100% - rem);
+    margin-inline: auto;
+}
+table {
+    background-color: #FFEFCA;
+    border: #2E355B 2px solid;
+    border-collapse: collapse;
+    width: 890px;
+}
+table caption {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 6px 0px;
+}
+th {
+    background-color: #d28300;
+    border: #2E355B 2px solid;
+    border-collapse: collapse;
+    text-transform: uppercase;
+    padding: 1%;
+}
+td {
+    border: #2E355B 2px solid;
+    border-collapse: collapse;
+    padding: 1%;
+}
+tr:nth-of-type(2n) {
+    background: #fed575;
+}
+.personalTable{
+    display: table;
+}
+.medTable {
+    display: none;
+}
+.centSalTable {
+    display: none;
+}
+.emergenciaTable {
+    display: none;
+}
+.emergenciaText {
+    display: none;
+    font-style: bold;
+    font-size: 20px;
+}
+.farmaceuticaTable {
+    display: none;
+}
+.farmText {
+    display: none;
+    font-style: bold;
+    font-size: 20px;
+}
 
-@media only screen and (min-width: 900px)  {
-    .userType {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 880px;
-    }
-    .userType a{
-        margin: 2%;
-        border-radius: 5px;
-        width: 16%;
-        border: #2E355B 2px solid;
-        color: #CDD0FF;
-        background-color: #2E355B;
-    }
-    .userType a:hover{
-        border: #2E355B 2px solid;
-        color: #2E355B;
-        background-color: #CDD0FF;
-    }
+@media only screen and (max-width: 900px)  {
     table {
-        background-color: #FFEFCA;
-        border: #2E355B 2px solid;
-        border-collapse: collapse;
-        width: 890px;
+        width: auto;
     }
-    table caption {
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 6px 0px;
-    }
-    table tr th {
-        background-color: #EDC33B;
-        border: #2E355B 2px solid;
-        border-collapse: collapse;
-        text-transform: uppercase;
-        padding: 1%;
-    }
-    table tr td {
-        background-color: #FFEFCA;
-        border: #2E355B 2px solid;
-        border-collapse: collapse;
-        padding: 1%;
-    }
-    table tr td:hover {
-        background: #EDC33B;
-    }
-    .personalTable{
-        display: table;
-    }
-    .medTable {
+    th {
         display: none;
     }
-    .centSalTable {
-        display: none;
+    td {
+        display: grid;
+        grid-template-columns: 15ch auto;
+        padding: 0.75rem 1rem;
     }
-    .emergenciaTable {
-        display: none;
+    td:first-child {
+        padding-top: 2rem;
     }
-    .emergenciaText {
-        display: none;
-        font-style: bold;
-        font-size: 20px;
+    td:last-child {
+        padding-bottom: 2rem;
     }
-    .farmaceuticaTable {
-        display: none;
-    }
-    .farmText {
-        display: none;
-        font-style: bold;
-        font-size: 20px;
-    }
-    .tables tbody tr:hover {
-        background-color: #f2ca46;
-    }
-    .tables tbody td:hover {
-        background-color: #f2ca46;
+
+    td::before {
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
     }
 }
