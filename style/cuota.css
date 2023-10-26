@@ -46,7 +46,7 @@ table {
     background-color: #FFEFCA;
     border: #2E355B 2px solid;
     border-collapse: collapse;
-    width: 890px;
+    width: 878px;
 }
 table caption {
     font-size: 30px;
@@ -85,6 +85,9 @@ tr:nth-of-type(2n) {
     display: none;
     font-style: bold;
     font-size: 20px;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .farmaceuticaTable {
     display: none;

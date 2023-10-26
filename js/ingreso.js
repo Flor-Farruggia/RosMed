@@ -31,6 +31,7 @@ enviarButton.addEventListener('click', (e)=>{
     e.preventDefault();
     tittlePass.style.display = 'none';
     inputEmail.style.display = 'none';
+    enviarButton.style.display = 'none';
     checkTittle.style.display = 'block';
 });
 closePassModal.addEventListener('click', (e)=>{

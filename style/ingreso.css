@@ -145,7 +145,7 @@ main {
     .buttonModal a {
         margin: 10%;
         border-radius: 5px;
-        width: 50%;
+        width: 100%;
         border: #2E355B 2px solid;
         color: #CDD0FF;
         background-color: #2E355B;
