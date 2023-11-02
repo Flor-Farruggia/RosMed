@@ -1,6 +1,11 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
 
+:root {
+    --darkBlue: #25358D;
+    --lightBlue: #CDD0FF;
+  }
+
 body {
     margin: 0%;
     padding: 0%;
@@ -9,8 +14,8 @@ body {
 @media only screen and (min-width: 360px) {
     .menu-nav-min-show {
         background-color: aliceblue;
-        color: #2E355B;
-        border: #2E355B 3px solid;
+        color: var(--darkBlue);
+        border: var(--darkBlue) 3px solid;
         margin: 10px;
     }
     .menu-ul-min {
@@ -24,7 +29,7 @@ body {
 
     .menu-nav {
         display: none;
-        border-bottom: #2E355B 1px solid;
+        border-bottom: var(--darkBlue) 1px solid;
         font-family: 'Roboto', sans-serif;
     }
     ul {
@@ -36,19 +41,19 @@ body {
 @media only screen and (min-width: 600px) {
     .menu-nav a {
         text-decoration: none;
-        color: #CDD0FF;
+        color: var(--lightBlue);
         border-radius: 4px;
         padding: 16px;
     }
     .menu-nav a:hover {
-        background-color: #CDD0FF;
-        color: #2E355B;
+        background-color: var(--lightBlue);
+        color: var(--darkBlue);
     }
     .menu-nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: #2E355B;
+        background-color: var(--darkBlue);
     }
     .menu-nav > ul {
         list-style: none;

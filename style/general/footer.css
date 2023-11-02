@@ -1,5 +1,9 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
+:root {
+    --darkBlue: #25358D;
+    --lightBlue: #CDD0FF;
+  }
 body {
     margin: 0%;
     padding: 0%;
@@ -7,21 +11,21 @@ body {
 
 @media only screen and (min-width: 360px) {
     .footer a {
-        color: #CDD0FF;
+        color: var(--lightBlue);
         border-radius: 2px;
         padding: 16px;
     }
     .footer a:hover {
-        background-color: #CDD0FF;
-        color: #2E355B;
+        background-color: var(--lightBlue);
+        color: var(--darkBlue);
     }
     .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        background-color:  #2E355B;
-        color: #CDD0FF;
+        background-color:  var(--darkBlue);
+        color: var(--lightBlue);
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
     }

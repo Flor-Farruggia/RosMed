@@ -1,14 +1,20 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
 
+:root {
+    --darkBlue: #25358D;
+    --lightBlue: #CDD0FF;
+    --lightYellowMain:#fbf4e3;
+}
+
 body {
     margin: 0%;
     padding: 0%;
 }
 main {
     padding: 2%;
-    background: linear-gradient(#CDD0FF, #fbf4e3);
-    color: #2E355B;
+    background: linear-gradient(var(--lightBlue), var(--lightYellowMain));
+    color: var(--darkBlue);
     font-family: 'Roboto', sans-serif;
     user-select: none;
 }
@@ -150,8 +156,8 @@ main {
 }
 @media only screen and (min-width: 600px) {
     .menu-inicio a {
-        background-color: #CDD0FF;
-        color: #2E355B;
+        background-color: var(--lightBlue);
+        color: var(--darkBlue);
     }
     .info > h2 {
         font-size: 26px;

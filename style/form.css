@@ -1,12 +1,18 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
+:root {
+    --darkBlue: #25358D;
+    --lightBlue: #CDD0FF;
+    --lightYellowMain:#fbf4e3;
+}
+
 body {
     margin: 0%;
     padding: 0%;
 }
 main {
-    background: linear-gradient(#CDD0FF, #fbf4e3);
-    color: #2E355B;
+    background: linear-gradient(var(--lightBlue), var(--lightYellowMain));
+    color: var(--darkBlue);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -45,8 +51,8 @@ main {
         visibility: visible;
     }
     .menu-form a {
-        background-color: #CDD0FF;
-        color: #2E355B;
+        background-color: var(--lightBlue);
+        color: var(--darkBlue);
     }
 }
 @media only screen and (min-width: 900px)  {
@@ -63,22 +69,22 @@ main {
     .right-form > textarea {
         margin: 2%;
         border-radius: 2px;
-        border: #2E355B solid 1px;
+        border: var(--darkBlue) solid 1px;
     }
     .right-form > button {
         margin: 2%;
         border-radius: 5px;
         width: 30%;
-        border: #2E355B 2px solid;
-        color: #CDD0FF;
-        background-color: #2E355B;
+        border: var(--darkBlue) 2px solid;
+        color: var(--lightBlue);
+        background-color: var(--darkBlue);
     }
     .right-form > button:hover {
         margin: 2%;
         border-radius: 5px;
         width: 30%;
         background-color: #ffffff;
-        color: #2E355B;
+        color: var(--darkBlue);
     }
 
 }

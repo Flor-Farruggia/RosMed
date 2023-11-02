@@ -1,12 +1,17 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
+:root {
+    --darkBlue: #25358D;
+    --lightBlue: #CDD0FF;
+    --lightYellowMain:#fbf4e3;
+}
 body {
     margin: 0%;
     padding: 0%;
 }
 main {
-    background: linear-gradient(#CDD0FF, #fbf4e3);
-    color: #2E355B;
+    background: linear-gradient(var(--lightBlue), var(--lightYellowMain));
+    color: var(--darkBlue);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -28,7 +33,7 @@ main {
         padding-top: 2%;
         align-items: center;
         background-color: #dfe1ff;
-        border: #2E355B 2px solid;
+        border: var(--darkBlue) 2px solid;
         border-radius: 2%;
         width: 50%;
         height: 60%;
@@ -53,23 +58,23 @@ main {
         padding: 2%;
     }
     a:hover {
-        background-color:#2E355B;
-        color: #CDD0FF;
+        background-color: var(--darkBlue);
+        color: var(--lightBlue);
     }
     .buttonLog {
         margin: 2%;
         border-radius: 5px;
         width: 50%;
-        border: #2E355B 2px solid;
-        color: #CDD0FF;
-        background-color: #2E355B;
+        border: var(--darkBlue) 2px solid;
+        color: var(--lightBlue);
+        background-color: var(--darkBlue);
     }
     .buttonLog:hover {
         margin: 2%;
         border-radius: 5px;
         width: 25%;
         background-color: #ffffff;
-        color: #2E355B;
+        color: var(--darkBlue);
     }
 
     .modal {
@@ -78,7 +83,7 @@ main {
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: #2E355Bbd;
+        background-color: var(--darkBlue);
         display: flex;
         opacity: 0;
         pointer-events: none;
@@ -92,7 +97,7 @@ main {
         margin: auto;
         max-width: 600px;
         max-height: 90%;
-        background-color: #CDD0FF;
+        background-color: var(--lightBlue);
         border-radius: 6px;
         padding: 3px;
         display: grid;
@@ -106,7 +111,7 @@ main {
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: #2E355Bbd;
+        background-color: var(--darkBlue);
         display: flex;
         opacity: 0;
         pointer-events: none;
@@ -119,16 +124,16 @@ main {
         margin: 10%;
         border-radius: 5px;
         width: 50%;
-        border: #2E355B 2px solid;
-        color: #CDD0FF;
-        background-color: #2E355B;
+        border: var(--darkBlue) 2px solid;
+        color: var(--lightBlue);
+        background-color: var(--darkBlue);
     }
     .modalPassCont{
         width: 90%;
         margin: auto;
         max-width: 430px;
         max-height: 90%;
-        background-color: #CDD0FF;
+        background-color: var(--lightBlue);
         border-radius: 6px;
         padding: 3px;
         display: grid;
@@ -146,9 +151,9 @@ main {
         margin: 10%;
         border-radius: 5px;
         width: 100%;
-        border: #2E355B 2px solid;
-        color: #CDD0FF;
-        background-color: #2E355B;
+        border: var(--darkBlue) 2px solid;
+        color: var(--lightBlue);
+        background-color: var(--darkBlue);
     }
     .tittle {
         display: none;
@@ -177,7 +182,7 @@ main {
         padding-top: 2%;
         align-items: center;
         background-color: #dfe1ff;
-        border: #2E355B 2px solid;
+        border: var(--darkBlue) 2px solid;
         width: 50%;
         height: 60%;
     }
@@ -191,23 +196,23 @@ main {
         padding: 2%;
     }
     a:hover {
-        background-color:#2E355B;
-        color: #CDD0FF;
+        background-color:var(--darkBlue);
+        color: var(--lightBlue);
     }
     .buttonLog {
         margin: 2%;
         border-radius: 5px;
         width: 20%;
-        border: #2E355B 2px solid;
-        color: #CDD0FF;
-        background-color: #2E355B;
+        border: var(--darkBlue) 2px solid;
+        color: var(--lightBlue);
+        background-color: var(--darkBlue);
     }
     .buttonLog:hover {
         margin: 2%;
         border-radius: 5px;
         width: 20%;
         background-color: #ffffff;
-        color: #2E355B;
+        color: var(--darkBlue);
     }
 }
 @media only screen and (min-width: 900px)  {

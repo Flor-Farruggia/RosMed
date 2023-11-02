@@ -1,12 +1,17 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
+:root {
+    --darkBlue: #25358D;
+    --lightBlue: #CDD0FF;
+    --lightYellowMain:#fbf4e3;
+  }
 body {
     margin: 0%;
     padding: 0%;
 }
 main {
-    background: linear-gradient(#CDD0FF, #fbf4e3);
-    color: #2E355B;
+    background: linear-gradient(var(--lightBlue), var(--lightYellowMain));
+    color: var(--darkBlue);
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -27,6 +32,6 @@ main > p {
     font-size: 20px;
 }
 .footer a {
-    background-color: #CDD0FF;
-    color: #2E355B;
+    background-color: var(--lightBlue);
+    color: var(--darkBlue);
 }
