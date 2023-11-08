@@ -244,6 +244,10 @@ main {
         width: 30%;
         align-self: center;
     }
+    .img-paciente img{
+        width: 320px;
+        height: 228px;
+    }
     .info-medicos{
         display: flex;
         flex-direction: row;
@@ -264,6 +268,10 @@ main {
     .img-medicos {
         width: 30%;
         align-self: center;
+    }
+    .img-medicos img{
+        width: 320px;
+        height: 228px;
     }
     .info-CenSalud {
         display: flex;
@@ -286,6 +294,10 @@ main {
         width: 30%;
         align-self: center;
     }
+    .img-CenSalud img{
+        width: 320px;
+        height: 228px;
+    }
     .info-emergencia{
         display: flex;
         flex-direction: row;
@@ -307,6 +319,10 @@ main {
         width: 30%;
         align-self: center;
     }
+   .img-emergencia img{
+        width: 320px;
+        height: 228px;
+    }
     .info-farmaceuticas{
         display: flex;
         flex-direction: row;
@@ -327,5 +343,9 @@ main {
     .img-farmaceuticas {
         width: 30%;
         align-self: center;
+    }
+    .img-farmaceuticas img{
+        width: 320px;
+        height: 228px;
     }
 }
