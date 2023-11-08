@@ -83,7 +83,7 @@ main {
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: var(--darkBlue);
+        background-color: #25358Dbd;
         display: flex;
         opacity: 0;
         pointer-events: none;
@@ -111,7 +111,7 @@ main {
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: var(--darkBlue);
+        background-color: #25358Dbd;
         display: flex;
         opacity: 0;
         pointer-events: none;
@@ -126,7 +126,7 @@ main {
         width: 50%;
         border: var(--darkBlue) 2px solid;
         color: var(--lightBlue);
-        background-color: var(--darkBlue);
+        background-color: #25358Dbd;
     }
     .modalPassCont{
         width: 90%;

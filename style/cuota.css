@@ -62,7 +62,7 @@ table caption {
     margin: 6px 0px;
 }
 th {
-    background-color: #d28300;
+    background-color: #f29701;
     border: var(--darkBlue) 2px solid;
     border-collapse: collapse;
     text-transform: uppercase;
@@ -77,7 +77,8 @@ tr:nth-of-type(2n) {
     background: #ffd061;
 }
 tr:hover {
-    background-color: #ff8a46;
+    background-color: var(--lightBlue);
+    color: var(--darkBlue);
 }
 .personalTable{
     display: table;

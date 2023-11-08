@@ -80,7 +80,7 @@ main {
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: var(--darkBlue);
+        background-color: #25358Dbd;
         display: flex;
         opacity: 0;
         pointer-events: none;
@@ -117,7 +117,7 @@ main {
         bottom: 0;
         right: 0;
         left: 0;
-        background-color: var(--darkBlue)bd;
+        background-color: #25358Dbd;
         display: flex;
         opacity: 0;
         pointer-events: none;
@@ -150,13 +150,8 @@ main {
 }
 
 @media only screen and (min-width: 600px) {
-
     .menu-nav {
         visibility: visible;
-    }
-    .menu-form a {
-        background-color: var(--lightBlue);
-        color: var(--darkBlue);
     }
 }
 @media only screen and (min-width: 900px)  {

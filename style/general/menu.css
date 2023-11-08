@@ -13,7 +13,7 @@ body {
 
 @media only screen and (min-width: 360px) {
     .menu-nav-min-show {
-        background-color: aliceblue;
+        background-color: var(--lightBlue);
         color: var(--darkBlue);
         border: var(--darkBlue) 3px solid;
         margin: 10px;
