@@ -1,84 +1,106 @@
 @import url('https://fonts.google.com/share?selection.family=Roboto');
 /**font-family: 'Roboto', sans-serif;*/
-
 :root {
     --darkBlue: #25358D;
     --lightBlue: #CDD0FF;
+    --mediumBlue: #0099CC;
   }
-
-body {
-    margin: 0%;
-    padding: 0%;
+#menu {
+	background: var(--darkBlue);
+	height: 45px;
+	padding-left: 18px;
+	border-radius: 0px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+    display: flex;
+}
+#menu ul {
+	width: 100%;
+	text-align: left;
+}
+#menu li {
+	display: inline-block;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: var(--lightBlue);
+	font-size: 18px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #F2F2F2;
+	background: #0099CC;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	color: #FFFFFF;
+	content: "\2261";
+	margin-left: 20px;
 }
 
-@media only screen and (min-width: 360px) {
-    .menu-nav-min-show {
-        background-color: var(--lightBlue);
-        color: var(--darkBlue);
-        border: var(--darkBlue) 3px solid;
-        margin: 10px;
+@media screen and (max-width: 600px){
+	#menu {
+        position:relative;
     }
-    .menu-ul-min {
-        list-style: none;
-        display: none;
-    }
-    .menu-nav-min-show .menu-ul-min-show {
-        display:unset;
-    }
-
-
-    .menu-nav {
-        display: none;
-        border-bottom: var(--darkBlue) 1px solid;
-        font-family: 'Roboto', sans-serif;
-    }
-    ul {
-        list-style: circle;
-        align-content: space-between;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .menu-nav a {
-        text-decoration: none;
-        color: var(--lightBlue);
-        border-radius: 4px;
-        padding: 16px;
-    }
-    .menu-nav a:hover {
-        background-color: var(--lightBlue);
-        color: var(--darkBlue);
-    }
-    .menu-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: var(--darkBlue);
-    }
-    .menu-nav > ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
-    .menu-list {
-        padding-right: 20%;
-    }
-    .menu-ingreso {
+	#menu ul {
+        background:#444444;
+        position:absolute;
+        top:100%;
+        right:0;
+        left:0;
+        z-index:3;
+        height:auto;
         display:none;
+        text-align:left;
     }
-    .menu-registro {
-        display: none;
+	#menu li {
+        display:block;
+        float:none;
+        width:auto;
     }
-}
-@media only screen and (min-width: 900px)  {
-    .menu-nav {
-        display: flex;
+	#menu input, #menu label {
+        position:absolute;
+        top:0;
+        left:0;
+        display:block;
+        padding-left: 48%;
     }
-    .menu-nav > ul {
-        list-style: none;
-        display: flex;
+	#menu input {
+        z-index:4
     }
-    .menu-list {
-        padding-right: 30%;
+	#menu input:checked + label {
+        color:#FFFFFF
+    }
+	#menu input:checked + label:before {
+        content:"\00d7"
+    }
+	#menu input:checked ~ ul {
+        display:block
     }
 }

@@ -5,6 +5,7 @@
     --darkBlue: #25358D;
     --lightBlue: #CDD0FF;
     --lightYellowMain:#fbf4e3;
+    --mediumBlue: #0099CC;
 }
 
 body {
@@ -28,25 +29,20 @@ main {
         align-items: center;
     }
     .info {
-        align-content: left;
         width: 80%;
+        border: 6px solid var(--darkBlue);
+        border-radius: 4%;
+        background: var(--mediumBlue);
     }
     .info > h2 {
         text-align:center;
         font-size: 20px;
+        padding-left: 2%;
     }
     .info > p {
         text-align: justify;
         font-size: 16px;
-    }
-    .video-info {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-    }
-    .video-info > label {
-        font-size: 20px;
+        padding: 2%;
     }
     .info-paciente{
         display: flex;
@@ -155,10 +151,6 @@ main {
     }
 }
 @media only screen and (min-width: 600px) {
-    .menu-inicio a {
-        background-color: var(--lightBlue);
-        color: var(--darkBlue);
-    }
     .info > h2 {
         font-size: 26px;
     }
@@ -204,7 +196,7 @@ main {
     }
     .info {
         align-content: left;
-        width: 40%;
+        width: 80%;
     }
     .info > h2 {
         text-align: left;

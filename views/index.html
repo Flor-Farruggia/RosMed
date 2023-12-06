@@ -14,59 +14,21 @@
         <header class="header">
             <h1>
                 Ros Med
+                <img src="../style/img/logoRosMed-removebg.png" class="icono-logo" alt="Logo RosMed">
             </h1>
-            <nav class="menu-nav-min">
-                <img src="https://cdn.icon-icons.com/icons2/1875/PNG/512/hamburgermenu_120234.png"
-                class="icono-menu" alt="icono de menu">
-                <ul class="menu-ul-min">
-                    <li class="menu-list-min">
-                        <a href="./index.html" >Inicio</a>
-                    </li>
-                    <li class="menu-list-min">
-                        <a href="./formulario.html">Formulario</a>
-                    </li>
-                    <li class="menu-list">
-                        <a href="./cuotas.html">Cuotas</a>
-                    </li>
-                    <li class="menu-list-min">
-                        <a href="./localizacion.html">Localización</a>
-                    </li>
-                    <li class="menu-list-min">
-                        <a href="./registro.html">Registro</a>
-                    </li>
-                    <li class="menu-list-min">
-                        <a href="./ingreso.html">Ingreso</a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="registro-ingreso">
-                <a href="./registro.html">Registro</a>
-                /
-                <a href="./ingreso.html">Ingreso</a>
-            </p>
+            <p class="fraseCabecera">Por una salud integral...</p>
         </header>
-        <nav class="menu-nav">
-            <ul class="menu-ul">
-                <li class="menu-list menu-inicio">
-                    <a href="./index.html" >Inicio</a>
-                </li>
-                <li class="menu-list menu-form">
-                    <a href="./formulario.html">Formulario</a>
-                </li>
-                <li class="menu-list menu-cuota">
-                    <a href="./cuotas.html">Cuotas</a>
-                </li>
-                <li class="menu-list menu-locacion">
-                    <a href="./localizacion.html">Localización</a>
-                </li>
-                <li class="menu-list menu-registro">
-                    <a href="./registro.html">Registro</a>
-                </li>
-                <li class="menu-list menu-ingreso">
-                    <a href="./ingreso.html">Ingreso</a>
-                </li>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href="./index.html" >Inicio</a></li>
+                <li><a href="./formulario.html">Formulario</a></li>
+                <li><a href="./cuotas.html">Cuotas</a></li>
+                <li><a href="./localizacion.html">Localización</a></li>
+                <li class=".registroIngreso"><a href="./registro.html">Registro</a></li>
+                <li class=".registroIngreso"><a href="./ingreso.html">Ingreso</a></li>
             </ul>
-        </nav>
+          </nav>
         <main>
             <section class="filosofia">
                 <div class="info">
@@ -81,15 +43,7 @@
                         y seguro a historiales clínicos, información vital y recursos farmacológicos. Creemos que la salud
                         es un derecho fundamental, y nuestra aplicación es un paso hacia un sistema de atención médica más
                         eficiente y personalizado.
-                        
                     </p>
-                </div>
-                <div class="video-info">
-                    <label for="Video-Filosofia">Video introductorio de RosMed:</label>
-                    <video id="Video-Filosofia" width="350" height="250" controls autoplay muted loop>
-                        <source src="" type="video/mp4">
-                        Tu navegador no soporta este formato de video.
-                    </video>
                 </div>
             </section>
             <section class="info-paciente">

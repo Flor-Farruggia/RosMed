@@ -19,49 +19,43 @@ body {
     width: 100%;
 }
 
+
 @media only screen and (min-width: 360px) {
+    .header {
+        flex-direction: column;
+    }
     .header h1 {
         text-align: start;
         font-family: 'PT Serif', serif;
         font-weight: 700;
-        font-style: bold;
         font-size: 40px;
-        margin-left: 2%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
-    .header img {
-        height: 50px;
-        width: 50px;
-        padding-right: 2%;
+    .icono-logo {
+        height: 60%;
+        width: 40%;
     }
-    .registro-ingreso {
-        display: none;
-    }
+    .fraseCabecera {
+        display:flex;
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        font-size: 22px;
+        padding-right: 10%;
+        padding-left: 10%;
+
+}
 }
 @media only screen and (min-width: 600px) {
-    .header img {
-        display: none;
-    }
-    .registro-ingreso {
-            display:flex;
-            font-family: 'PT Serif', serif;
-            font-weight: 400;
-            font-size: 22px;
-            padding-right: 2%;
-    }
-    .registro-ingreso a {
-        text-decoration: none;
-        color: var(--lightBlue);
-        border-radius: 4px;
-        border-width: 20px;
-    }
-    .registro-ingreso a:hover {
-        background-color: var(--lightBlue);
-        color: var(--darkBlue);
+    .fraseCabecera {
+        font-size: 26px;
+        padding-right: 20%;
+        padding-left: 20%;
     }
  }
 @media only screen and (min-width: 900px) {
-    .registro-ingreso {
+    .fraseCabecera {
         font-size: 30px;
-        padding-right: 2%;
     }
 }
