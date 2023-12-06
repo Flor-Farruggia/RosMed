@@ -4,6 +4,7 @@
     --darkBlue: #25358D;
     --lightBlue: #CDD0FF;
     --lightYellowMain:#fbf4e3;
+    --mediumBlue: #0099CC;
 }
 body {
     margin: 0%;
@@ -17,10 +18,16 @@ main {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     user-select: none;
+    text-align: center;
 }
 @media only screen and (min-width: 360px) {
-    .menu-nav {
-        visibility: hidden;
+    h2{
+        margin-bottom: 0%;
+    }
+    p {
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 1%;
     }
     .form {
         display: flex;

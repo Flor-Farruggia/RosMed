@@ -5,6 +5,7 @@
     --darkBlue: #25358D;
     --lightBlue: #CDD0FF;
     --lightYellowMain:#fbf4e3;
+    --mediumDarkBlue: #085F7D;
   }
 
 body {
@@ -30,12 +31,12 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    width: 880px;
+    width: 100%;
 }
 .userType a{
     margin: 2%;
     border-radius: 5px;
-    width: 16%;
+    padding: 1%;
     border: var(--darkBlue) 2px solid;
     color: var(--lightBlue);
     background-color: var(--darkBlue);
@@ -76,9 +77,12 @@ td {
 tr:nth-of-type(2n) {
     background: #ffd061;
 }
-tr:hover {
-    background-color: var(--lightBlue);
+.cabecera:hover{
     color: var(--darkBlue);
+}
+tr:hover {
+    background-color: var(--mediumDarkBlue);
+    color: #ffffff;
 }
 .personalTable{
     display: table;
@@ -88,6 +92,14 @@ tr:hover {
 }
 .centSalTable {
     display: none;
+}
+.CentroMedText {
+    display: none;
+    font-style: bold;
+    font-size: 20px;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .emergenciaTable {
     display: none;

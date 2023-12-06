@@ -1,10 +1,3 @@
-/**Para hacer la tabla responsive crear un if para redefinir las tablas, acciones y classes */
-
-
-
-
-
-
 const personalButton = document.querySelector('.personalButton');
 const medicoButton = document.querySelector('.medicoButton');
 const saludButton = document.querySelector('.cenSaludButton');
@@ -19,6 +12,7 @@ const tableEmerg = document.querySelector('.emergenciaTable');
 const tableFarmaceutica = document.querySelector('.farmaceuticaTable');
 
 
+const centroText = document.querySelector('.CentroMedText');
 const emergText = document.querySelector('.emergenciaText');
 const farmText = document.querySelector('.farmText')
 
@@ -31,6 +25,7 @@ personalButton.addEventListener('click', (e)=>{
     tableEmerg.style.display = 'none';
     tableFarmaceutica.style.display = 'none';
 
+    centroText.style.display = 'none';
     emergText.style.display = 'none';
     farmText.style.display = 'none';
 });
@@ -43,12 +38,14 @@ medicoButton.addEventListener('click', (e)=>{
     tableEmerg.style.display = 'none';
     tableFarmaceutica.style.display = 'none';
 
+    centroText.style.display = 'none';
     emergText.style.display = 'none';
     farmText.style.display = 'none';
 });
 saludButton.addEventListener('click', (e)=>{
     e.preventDefault();
-    tableSalud.style.display = 'table';
+    tableSalud.style.display = 'inline-table';
+    centroText.style.display = 'block';
     tablePerson.style.display = 'none';
     tableMed.style.display = 'none';
     tableEmerg.style.display = 'none';
@@ -66,6 +63,7 @@ emergenciaButton.addEventListener('click', (e)=>{
     tableMed.style.display = 'none';
     tableFarmaceutica.style.display = 'none';
 
+    centroText.style.display = 'none';
     farmText.style.display = 'none';
 });
 farmaceuticaButton.addEventListener('click', (e)=>{
@@ -77,6 +75,7 @@ farmaceuticaButton.addEventListener('click', (e)=>{
     tableMed.style.display = 'none';
     tableEmerg.style.display = 'none';
 
+    centroText.style.display = 'none';
     emergText.style.display = 'none';
 });
 

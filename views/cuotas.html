@@ -14,38 +14,21 @@
         <header class="header">
             <h1>
                 Ros Med
+                <img src="../style/img/logoRosMed-removebg.png" class="icono-logo" alt="Logo RosMed">
             </h1>
-            <img
-            src="https://cdn.icon-icons.com/icons2/1875/PNG/512/hamburgermenu_120234.png"
-            alt="icono-menu">
-            <p class="registro-ingreso">
-                <a href="./registro.html">Registro</a>
-                /
-                <a href="./ingreso.html">Ingreso</a>
-            </p>
+            <p class="fraseCabecera">Por una salud integral...</p>
         </header>
-        <nav class="menu-nav">
-            <ul class="menu-ul">
-                <li class="menu-list menu-inicio">
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li class="menu-list menu-form">
-                    <a href="./formulario.html">Formulario</a>
-                </li>
-                <li class="menu-list menu-cuota">
-                    <a href="./cuotas.html">Cuotas</a>
-                </li>
-                <li class="menu-list menu-locacion">
-                    <a href="./localizacion.html">Localización</a>
-                </li>
-                <li class="menu-list menu-registro">
-                    <a href="./registro.html">Registro</a>
-                </li>
-                <li class="menu-list menu-ingreso">
-                    <a href="./ingreso.html">Ingreso</a>
-                </li>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href="./index.html" >Inicio</a></li>
+                <li><a href="./formulario.html">Formulario</a></li>
+                <li><a href="./cuotas.html">Cuotas</a></li>
+                <li><a href="./localizacion.html">Localización</a></li>
+                <li class=".registroIngreso"><a href="./registro.html">Registro</a></li>
+                <li class=".registroIngreso"><a href="./ingreso.html">Ingreso</a></li>
             </ul>
-        </nav>
+          </nav>
         <main>
             <div class="userType">
                 <a href="#" class="personalButton">Personal</a>
@@ -57,7 +40,7 @@
             <div class="tables">
                 <table class="personalTable">
                     <caption>Uso personal</caption>
-                        <tr>
+                        <tr class="cabecera">
                             <th>N° de plan</th>
                             <th>Tipo de plan</th>
                             <th>Cant. Usuarios</th>
@@ -109,7 +92,7 @@
                 </table>
                 <table class="medTable">
                     <caption>Uso médico</caption>
-                        <tr>
+                        <tr class="cabecera">
                             <th>N° de plan</th>
                             <th>Cant. Pacientes</th>
                             <th>Pagos</th>
@@ -154,7 +137,7 @@
                 </table>
                 <table class="centSalTable">
                     <caption>Uso en centros de salud</caption>
-                        <tr>
+                        <tr class="cabecera">
                             <th>N° de plan</th>
                             <th>Tipo de centro</th>
                             <th>Areas médicas</th>
@@ -165,103 +148,109 @@
                         <tr>
                             <td data-cell="N° de plan">P-013</td>
                             <td data-cell="Tipo de centro">Sanatorio</td>
-                            <td data-cell="Áreas médicas">10</td>
-                            <td data-cell="Pacientes por área">1000</td>
+                            <td data-cell="Áreas médicas">20</td>
+                            <td data-cell="Pacientes por área">2000</td>
                             <td data-cell="Pago">Mensual</td>
                             <td data-cell="Precios">100.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-014</td>
                             <td data-cell="Tipo de centro">Sanatorio</td>
-                            <td data-cell="Áreas médicas">30</td>
-                            <td data-cell="Pacientes por área">1000</td>
+                            <td data-cell="Áreas médicas">40</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Mensual</td>
                             <td data-cell="Precios">200.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-015</td>
                             <td data-cell="Tipo de centro">Sanatorio</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">20</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Trimestral</td>
-                            <td data-cell="Precios">xxxx$</td>
+                            <td data-cell="Precios">300.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-016</td>
                             <td data-cell="Tipo de centro">Sanatorio</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">40</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Trimestral</td>
-                            <td data-cell="Precios">xxxx$</td>
+                            <td data-cell="Precios">600.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-017</td>
                             <td data-cell="Tipo de centro">Hospital</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">20</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Mensual</td>
-                            <td data-cell="Precios">xxxx$</td>
+                            <td data-cell="Precios">100.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-018</td>
                             <td data-cell="Tipo de centro">Hospital</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">40</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Mensual</td>
-                            <td data-cell="Precios">xxxx$</td>
+                            <td data-cell="Precios">200.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-019</td>
                             <td data-cell="Tipo de centro">Hospital</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">20</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Trimestral</td>
-                            <td data-cell="Precios">xxxx$</td>
+                            <td data-cell="Precios">300.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-020</td>
                             <td data-cell="Tipo de centro">Hospital</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">40</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Trimestral</td>
-                            <td data-cell="Precios">xxxx$</td>
+                            <td data-cell="Precios">600.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-021</td>
                             <td data-cell="Tipo de centro">Clínica/Consultorio</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">15</td>
+                            <td data-cell="Pacientes por área">3000</td>
                             <td data-cell="Pago">Mensual</td>
                             <td data-cell="Precios">90.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-022</td>
                             <td data-cell="Tipo de centro">Clínica/Consultorio</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">15</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Mensual</td>
                             <td data-cell="Precios">150.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-023</td>
                             <td data-cell="Tipo de centro">Clínica/Consultorio</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">15</td>
+                            <td data-cell="Pacientes por área">3000</td>
                             <td data-cell="Pago">Trimestral</td>
-                            <td data-cell="Precios">xxxx$</td>
+                            <td data-cell="Precios">270.000$</td>
                         </tr>
                         <tr>
                             <td data-cell="N° de plan">P-024</td>
                             <td data-cell="Tipo de centro">Clínica/Consultorio</td>
-                            <td data-cell="Áreas médicas">xx</td>
-                            <td data-cell="Pacientes por área">xxxx</td>
+                            <td data-cell="Áreas médicas">15</td>
+                            <td data-cell="Pacientes por área">4000</td>
                             <td data-cell="Pago">Trimestral</td>
-                            <td data-cell="Precios">xxxx$</td>
+                            <td data-cell="Precios">450.000$</td>
                         </tr>
                 </table>
+                <p class="CentroMedText">
+                    Cualquier arreglo externo puede ser determinado en contrato, especialmente para cualquier
+                    entidad pública o en caso de necesitar una pesonalización de plataforma en caso de tener
+                    mayor cantidad de pacientes de lo pactado en la plataforma base. Por favor, no dudes en
+                    contactarnos.
+                </p>
                 <table class="emergenciaTable">
                     <caption>Uso en servicio de emergencia</caption>
-                        <tr>
+                        <tr class="cabecera">
                             <th>N° de plan</th>
                             <th>Usos</th>
                             <th>Tipo</th>
@@ -304,7 +293,7 @@
                 </p>
                 <table class="farmaceuticaTable">
                     <caption>Uso para Laboratorios</caption>
-                        <tr>
+                        <tr class="cabecera">
                             <th>N° de plan</th>
                             <th>Usos</th>
                             <th>Pagos</th>
@@ -360,17 +349,12 @@
                 <a href="./desarrollador.html">Información del desarrollador</a>
             </div>
             <div class="right-footer">
-                <img src="" alt="icono-facebook" href="">
-                <img src="" alt="icono-twitter" href="">
-                <img src="" alt="icono-instagram" href="">
-                <img src="" alt="icono-linkedin" href="">
-                <!--Boton/icono flechita para ir arriba--->
+                <img src="/style/img/LogoFacebook.png" alt="icono de facebook" href="">
+                <img src="/style/img/LogoTwitter.png" alt="icono de twitter" href="">
+                <img src="/style/img/LogoInstagram.png" alt="icono de instagram" href="">
+                <img src="/style/img/LogoLinkedin.png" alt="icono de linkedin" href="">
             </div>
         </footer>
-
-
-
-
         <script src="../js/cuota.js"></script>
     </body>
 </html>
