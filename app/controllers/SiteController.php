@@ -7,7 +7,6 @@ class SiteController extends Controller
 {
     // Constructor
     public function __construct(){
-        // self::$sessionStatus = SessionController::sessionVerificacion();
     }
 
 	public static function head(){
@@ -39,7 +38,7 @@ class SiteController extends Controller
 		$nav = file_get_contents(APP_PATH.'/views/inc/nav.php');
 
 		$nav = str_replace('#PATH#', self::$ruta, $nav);
-		$nav = str_replace('#HREF_USUARIO#', $usuarioHref, $nav); // Agregamos esto 👈
+		$nav = str_replace('#HREF_USUARIO#', $usuarioHref, $nav);
 
 		return $nav;
 	}

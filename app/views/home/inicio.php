@@ -83,6 +83,11 @@
                     Nuestros planes
                     <div class="title-clientes title-planes d-none d-md-block"></div>
                 </h2>
+                <p class="text-regular text-primary mb-4 w-80">
+                    Inicialmente toda nuestra aplicación es gratuita y las tafiras serás impuestas en un futuro,
+                    pero por ahora podes disfrutar de todas sus funcionalidades de forma libre, esperamos que te sea útil
+                    y que puedas disfrutar de la comodidad de tener todos tus datos en un mismo lugar.
+                </p>
                 <div class="row">
                     <div class="col-11 col-lg-4 mb-5">
                         <div class="card card-planes bg-white shadow-blue h-100">

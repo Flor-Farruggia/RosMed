@@ -973,8 +973,29 @@ input:focus, input:active{
   border: var(--secondary-two) 2px solid;
 }
 
+.w-80{
+  width: 80% !important;
+}
+@media (max-width: 992px) {
+  .w-80{
+    width: 100% !important;
+  }
+}
+.min-55{
+  min-height: 55vh;
+}
 .rg {
   text-decoration: underline;
+}
+.volver {
+  color: var(--primary);
+  text-decoration: underline;
+  transition: 0.4ms all ease-in-out;
+}
+.volver:hover {
+  color: var(--secondary-two)!important;
+  text-decoration:underline;
+  transition: 0.4ms all ease-in-out;
 }
 
 .form{

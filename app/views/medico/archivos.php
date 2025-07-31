@@ -29,6 +29,7 @@
                 <input type="file" name="archivo" id="archivo" accept=".pdf,.jpg,.jpeg,.png" required>
                 <span id="archivo-nombre" class="text-regular x-medium">Ningún archivo seleccionado</span>
             </div>
+            <h6 class="text-danger mb-4">Tener en cuenta que solo se aceptan archivo de formato .pdf, .png y .jpg</h6>
             <button type="submit" class="btn btn-success">Subir Archivo</button>
         </form>
 

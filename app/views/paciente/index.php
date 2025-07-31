@@ -19,7 +19,7 @@
         </div>
     </nav>
 
-    <main class="section bg-light" style="min-height: 55vh;">
+    <main class="section bg-light min-55">
         <div class="container">
             <h1 class="text-primary mb-4">Bienvenido, <?= htmlspecialchars($_SESSION['nombre']) ?></h1>
 

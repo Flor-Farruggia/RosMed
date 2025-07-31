@@ -113,13 +113,11 @@ class AdminController extends Controller
             $usuarios = UserModel::listarTodos();
         }
 
-        // Recursos comunes
         $head = SiteController::head();
         $nav = SiteController::nav();
         $footer = SiteController::footer();
         $path = static::path();
 
-        // Renderizar vista
         Response::render($this->viewDir(__NAMESPACE__), 'panel', [
             'title' => 'Panel de Administración',
             'head' => $head,
@@ -143,7 +141,6 @@ class AdminController extends Controller
         try {
             $db = \DataBase::connection();
 
-            // Obtenemos el estado actual
             $stmt = $db->prepare("SELECT activo FROM usuarios WHERE id = ?");
             $stmt->execute([$id]);
             $usuario = $stmt->fetch(\PDO::FETCH_ASSOC);
@@ -229,20 +226,17 @@ class AdminController extends Controller
             exit();
         }
 
-        // Obtener filtros del GET
         $filtro = $_GET['buscar'] ?? '';
         $tipoUser = $_GET['tipoUser'] ?? '';
 
         $usuarios = UserModel::buscarUsuarios($filtro, $tipoUser);
 
 
-        // Recursos comunes
         $head = SiteController::head();
         $nav = SiteController::nav();
         $footer = SiteController::footer();
         $path = static::path();
 
-        // Renderizar vista
         Response::render($this->viewDir(__NAMESPACE__), 'buscar', [
             'title' => 'Filtro',
             'head' => $head,
@@ -278,8 +272,8 @@ class AdminController extends Controller
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-            // Validaciones comunes
-            $campos = ['nombre' => [3, 100], 'apellido' => [3, 100], 'telefono' => [7, 20], 'pass' => [5, 20]];
+
+            $campos = ['nombre' => [3, 100], 'apellido' => [3, 100], 'telefono' => [7, 16], 'pass' => [5, 20]];
             foreach ($campos as $campo => [$min, $max]) {
                 $val = Controller::validarCampo($campo, $min, $max, $campo);
                 $datos[$campo] = $val['campo2'];
@@ -306,7 +300,7 @@ class AdminController extends Controller
             }
 
             // Email
-            $valEmail = Controller::validarEmail('email', 5, 120, 'e-mail');
+            $valEmail = Controller::validarEmail('email', 5, 100, 'e-mail');
             $datos['email'] = $valEmail['campo2'];
             if ($valEmail['error']) {
                 $error['email'] = $valEmail['msg'];
@@ -384,7 +378,7 @@ class AdminController extends Controller
         $status = false;
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $campos = ['nombre' => [3, 100], 'apellido' => [3, 100], 'telefono' => [7, 20]];
+            $campos = ['nombre' => [3, 100], 'apellido' => [3, 100], 'telefono' => [7, 15]];
             foreach ($campos as $campo => [$min, $max]) {
                 $val = Controller::validarCampo($campo, $min, $max, $campo);
                 if ($val['error']) {
@@ -492,7 +486,7 @@ class AdminController extends Controller
         SessionController::redirigirSiNoAutenticado();
 
         if (SessionController::obtenerRol() !== 'admin') {
-            header("Location: /login/index");
+            header("Location: /login/");
             exit();
         }
 
@@ -557,7 +551,7 @@ class AdminController extends Controller
             $stmt = $db->prepare("UPDATE usuarios SET activo = 0 WHERE id = ?");
             $stmt->execute([$id]);
 
-            session_destroy(); // Cierra la sesión
+            session_destroy();
             header("Location: " . static::path() . "login");
             exit();
         } catch (\PDOException $e) {

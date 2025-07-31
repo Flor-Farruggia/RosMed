@@ -26,7 +26,6 @@ class MedicoController extends Controller {
                 $matricula = $resultado['matricula'];
             }
         } catch (\PDOException $e) {
-            // podés loguear el error si querés
         }
 
         Response::render($this->viewDir(__NAMESPACE__), "index", [
@@ -95,7 +94,7 @@ class MedicoController extends Controller {
                     break;
 
                 case 'telefono':
-                    $val = Controller::validarCampo($campo, 9, 20, 'teléfono');
+                    $val = Controller::validarCampo($campo, 7, 15, 'teléfono');
                     break;
 
                 case 'email':
@@ -275,7 +274,6 @@ class MedicoController extends Controller {
                 }
             }
 
-            // ➕ Asociar paciente ya registrado
             if (isset($_POST['asociar']) && isset($_POST['id_usuario'])) {
                 $idUsuarioPaciente = intval($_POST['id_usuario']);
                 $idMedico = $_SESSION['id'];
@@ -299,7 +297,7 @@ class MedicoController extends Controller {
                 }
             }
 
-            // ➕ Crear nuevo paciente manualmente
+            // Crear paciente manualmente
             if (isset($_POST['crear'])) {
                 $nombre    = trim($_POST['nombre'] ?? '');
                 $apellido  = trim($_POST['apellido'] ?? '');
@@ -821,7 +819,7 @@ class MedicoController extends Controller {
         $mostrarFormularioManual = false;
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            // Acción: Buscar médico
+            // Buscar médico
             if (isset($_POST['buscar'])) {
                 $matricula = trim($_POST['matricula'] ?? '');
                 $datos['matricula'] = $matricula;
@@ -848,7 +846,7 @@ class MedicoController extends Controller {
                 }
             }
 
-            // Acción: Asociar médico existente
+            // Asociar médico existente
             elseif (isset($_POST['asociar']) && isset($_POST['id_medico'])) {
                 try {
                     $idMedico = intval($_POST['id_medico']);
@@ -862,7 +860,7 @@ class MedicoController extends Controller {
                 }
             }
 
-            // Acción: Crear médico manualmente
+            // Crear médico manualmente
             elseif (isset($_POST['crear'])) {
                 $nombre = trim($_POST['nombre'] ?? '');
                 $apellido = trim($_POST['apellido'] ?? '');
@@ -951,7 +949,8 @@ class MedicoController extends Controller {
 
         $db = \DataBase::connection();
         try {
-            $stmt = $db->prepare("SELECT u.nombre, u.apellido, mp.anotaciones FROM medico_paciente mp JOIN usuarios u ON mp.id_medico = u.id WHERE mp.id_medico = ? AND mp.id_paciente_user = ? LIMIT 1");
+            $stmt = $db->prepare("SELECT u.nombre, u.apellido, mp.anotaciones FROM medico_paciente mp JOIN usuarios u ON
+                                mp.id_medico = u.id WHERE mp.id_medico = ? AND mp.id_paciente_user = ? LIMIT 1");
             $stmt->execute([$idMedico, $idPaciente]);
             $resultado = $stmt->fetch(\PDO::FETCH_ASSOC);
 
@@ -1036,7 +1035,7 @@ class MedicoController extends Controller {
             $stmt = $db->prepare("UPDATE usuarios SET activo = 0 WHERE id = ?");
             $stmt->execute([$id]);
 
-            session_destroy(); // Cierra la sesión
+            session_destroy();
             header("Location: " . static::path() . "login");
             exit();
         } catch (\PDOException $e) {

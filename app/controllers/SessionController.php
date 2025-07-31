@@ -42,10 +42,10 @@ class SessionController
             session_start();
         }
 
-        session_unset();  // limpia las variables de sesión
-        session_destroy(); // destruye la sesión
+        session_unset();
+        session_destroy(); 
 
-        header("Location: /login/login");
+        header("Location: /login/");
         exit;
     }
 }

@@ -63,13 +63,14 @@ class RegistroController extends Controller
 			#FINAL validaciones DNI
 
 			#VALIDACION FECHA NACIMIENTO 
+
 			$valFecha = Controller::validarFechaNacimiento('fechaNac', 0, 100);
 
-			$datos['fechaNac'] = $valFecha['campo2'];
-			
 			if ($valFecha['error']) {
 				$error['fechaNac'] = $valFecha['msg'];
 				$status = true;
+			} else {
+				$datos['fechaNac'] = $valFecha['campo2'];
 			}
 			#FINAL validaciones FECHA NACIMIENTO 
 			##VALIDACION TIPO USER
@@ -85,7 +86,7 @@ class RegistroController extends Controller
 			}
 			#FINAL validaciones TIPO USER
 			##VALIDACION TELEFONO
-			$valTel = Controller::validarCampo('telefono', 9, 20, 'teléfono');
+			$valTel = Controller::validarCampo('telefono', 7, 15, 'teléfono');
 			
 			if ($valTel['error']==true) {
 				$error['telefono'] = $valTel['msg'];

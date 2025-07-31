@@ -9,10 +9,8 @@ class LogoutController extends Controller
     {
         session_start();
 
-        // Destruir todas las variables de sesión
         $_SESSION = [];
 
-        // Destruir la sesión
         if (ini_get("session.use_cookies")) {
             $params = session_get_cookie_params();
             setcookie(session_name(), '', time() - 42000,
@@ -23,8 +21,7 @@ class LogoutController extends Controller
 
         session_destroy();
 
-        // Redirigir al login
-        header("Location: /RosMed/home/");
+        header("Location: " . static::path() . "login");
         exit();
     }
 }

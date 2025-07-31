@@ -84,13 +84,12 @@ class LoginController extends Controller
                     $stmt = $db->prepare("UPDATE usuarios SET activo = 1 WHERE id = ?");
                     $stmt->execute([$id]);
 
-                    // Iniciar sesión automática después de reactivar
                     session_start();
                     session_regenerate_id(true);
                     $_SESSION['id'] = $id;
                     $_SESSION['email'] = $email;
                     $_SESSION['tipoUser'] = $tipo;
-                    $_SESSION['nombre'] = ''; // Podés hacer una consulta si querés mostrar el nombre
+                    $_SESSION['nombre'] = '';
 
                     header("Location: " . static::path() . $tipo);
                     exit();

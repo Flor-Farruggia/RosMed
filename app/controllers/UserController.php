@@ -14,7 +14,6 @@ class UserController extends Controller
 		self::action404();
 	}
 
-	/*obtiene todos los datos de un usuarios por id o por email según dato ingresado*/
 	public static function GetUser($emailOrId){
 		if (filter_var($emailOrId, FILTER_VALIDATE_EMAIL)) {
 			# obtener datos de usuario por Email
@@ -28,16 +27,7 @@ class UserController extends Controller
 		return $userData;
 	}
 
-	/*obtiene todos los datos de un usuarios token*/
-	public static function GetUserbytoken($token){
 
-		# obtener datos de usuario por token
-		$userData = UserModel::GetUserbytoken($token);
-
-		return $userData;
-	}
-
-	/*Validad si el e-mail asociado a un Usuario se encuentra en estado Activo*/
 	public static function checkActivo($userEmail){
 		$datosUsuario = UserModel::findEmail($userEmail);
 		// var_dump($datosUsuario);

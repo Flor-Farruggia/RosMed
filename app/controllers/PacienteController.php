@@ -85,7 +85,7 @@ class PacienteController extends Controller {
                     break;
 
                 case 'telefono':
-                    $val = Controller::validarCampo($campo, 9, 20, 'teléfono');
+                    $val = Controller::validarCampo($campo, 7, 15, 'teléfono');
                     break;
 
                 case 'email':
@@ -252,7 +252,7 @@ class PacienteController extends Controller {
                             $medicoEncontrado = null; // para no mostrar botón de asociar
                         }
                     } else {
-                        // Buscar en tabla `medicos` (sin usuario)
+                        // Buscar en tabla medicos (usuario sin registro)
                         $stmt2 = $db->prepare("
                             SELECT id, nombre, apellido, 'sin_usuario' AS tipo 
                             FROM medicos 
@@ -370,7 +370,7 @@ class PacienteController extends Controller {
         $anotaciones = '';
 
         try {
-            // Intentar buscar si el médico es un usuario registrado
+            //medcio es usuario registrado??
             $stmt = $db->prepare("
                 SELECT u.id, u.nombre, u.apellido
                 FROM medico_paciente mp
@@ -381,13 +381,13 @@ class PacienteController extends Controller {
             $medico = $stmt->fetch(\PDO::FETCH_ASSOC);
 
             if ($medico) {
-                // Buscar anotaciones si existe relación
+                //anotaciones existe relación??
                 $stmt = $db->prepare("SELECT anotaciones FROM medico_paciente WHERE id_paciente_user = ? AND id_medico = ?");
                 $stmt->execute([$idPaciente, $idMedico]);
                 $fila = $stmt->fetch(\PDO::FETCH_ASSOC);
                 $anotaciones = $fila['anotaciones'] ?? '';
             } else {
-                // Buscar si es un médico sin usuario registrado
+                // es un médico sin registro??
                 $stmt = $db->prepare("
                     SELECT m.id, m.nombre, m.apellido
                     FROM medico_paciente mp
